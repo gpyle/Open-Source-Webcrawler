@@ -26,7 +26,7 @@ for line in l:
     try:
         line.append(findasin(line[0]))
         assert False
-        sleep(18)
+        sleep(1)
     except:
         pass
 f.close()

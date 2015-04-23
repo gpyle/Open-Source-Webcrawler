@@ -15,7 +15,7 @@ def hasFreeShipping(url):
     ### For example the (?<=...) regular expression is called a positive lookbehind assertion.
     ### The syntax for regular expressions in python is re.findall(pattern, string, flags=0).
 
-    ### Step-2 searches every product on Amazon in the run.txt file, and returns the number of reviews, the number of stars, and the product title. 
+    ### Step-2 searches every product on Amazon in the run.txt file, and returns the number of reviews, the number of stars, and the product title.
 
 
     #### Returns all non-overlapping matches of pattern in string, as a list of strings.
@@ -44,7 +44,7 @@ for line in l:
     try:
         line.append(hasFreeShipping(line[0]))
         assert False
-        sleep(35)
+        sleep(1)
     except:
         pass
 f.close()

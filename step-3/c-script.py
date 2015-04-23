@@ -26,7 +26,7 @@ for line in l:
     try:
         line.append(hasFreeShipping(line[0]))
         assert False
-        sleep(35)
+        sleep(1)
     except:
         pass
 f.close()

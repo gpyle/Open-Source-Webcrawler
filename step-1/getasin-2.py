@@ -9,7 +9,7 @@ import urllib2, re
     ### The syntax for regular expressions in python is re.findall(pattern, string, flags=0).
 
     ### Step-1 finds and lists the ASIN Amazon bar codes from any top 100 best sellers list on Amazon.
-    
+
 
 def findasin(url):
     headers = {'User-Agent' : 'Mozilla 5.10'}
@@ -31,7 +31,7 @@ for line in l:
     try:
         line.append(findasin(line[0]))
         assert False
-        sleep(3)
+        sleep(1)
     except:
         pass
 f.close()
