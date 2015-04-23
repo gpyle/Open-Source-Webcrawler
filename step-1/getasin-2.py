@@ -2,6 +2,15 @@ from time import sleep
 
 import urllib2, re
 
+    ### Welcome to the Open Source Webcrawler
+
+    ### A regular expression is a special sequence of characters that helps you match or find other strings or sets of strings.
+    ### For example the (?<=...) regular expression is called a positive lookbehind assertion.
+    ### The syntax for regular expressions in python is re.findall(pattern, string, flags=0).
+
+    ### Step-1 finds and lists the ASIN Amazon bar codes from any top 100 best sellers list on Amazon.
+    
+
 def findasin(url):
     headers = {'User-Agent' : 'Mozilla 5.10'}
     request = urllib2.Request(url,None,headers)
